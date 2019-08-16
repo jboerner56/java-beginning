@@ -1,9 +1,9 @@
 public class ControlStructures {
     int a = 10; // 2 contexts in java class- static and non-static
-    static int b = 20
+    static int b = 20;
     // cant access static variables inside static class
     public static void main(String[] args) { //main is static method- bootstraps java classes
-        int a = 20 //local variable or local fields cant have modifers
+        int a = 20; //local variable or local fields cant have modifers
         // local scope, only accessable inside class
         // int b; will take precidence over global variable
         // no default values for local variables
