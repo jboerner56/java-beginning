@@ -5,6 +5,33 @@ class Book {
     string title;
     string author;
     string category;
+
+    public string getTitle() {
+        return title;
+    }
+
+    public void setTitle(string title) {
+        this.title = title;
+    }
+
+    public string getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(string author) {
+        this.author = author;
+    }
+
+    public string getCategory() {
+        return category;
+    }
+
+    public void setCategory(string category) {
+        this.category = category;
+    }
+
+    public Book() {
+    }
 }
 
 public class CreateBooks {
@@ -26,6 +53,7 @@ public class CreateBooks {
         System.out.println(textBook.author);
         System.out.println(textBook.category);
     }
+
 }
 
 // create student object
