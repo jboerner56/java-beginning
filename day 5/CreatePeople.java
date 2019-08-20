@@ -1,42 +1,38 @@
 public class CreatePeople {
 
 	public static void main(String[] args) {
-        // TODO Auto-generated method stub
         // class relation and object relation
         Person p = new Person("some person", "11111");
 
         Employee emp = new Employee("JohnDoe", "987867676",101,85000, "Software Engineer");
 
-        boolean same = (p == emp);
+        // boolean same = (p == emp);
             // p and emp are class objects
-        String str = new String("hi");
+        // String str = new String("hi");
         // same = (p == str);
 
-        Object obj = new Object();
-        same = (obj == str);
+        // Object obj = new Object();
+        // same = (obj == str);
                             // object
         // person extends the object    string is sibling with person. not compatible with each other
                 // person                   string
 
                 // employee                 
 
-        // System.out.println(emp.getName());
-        // System.out.println(emp.getMobile());  // 1. they are public and 2. we extended Person class
-        // System.out.println(emp.getEmpno());
-        // System.out.println(emp.getRole());
-        // System.out.println(emp.getSalary());
-        // System.out.println(emp);  
-        
-        // HourlyEmployee hemp = new HourlyEmployee("Jennifer Atkinson","945445454",102,200, 25.75);
-        
-        // System.out.println(hemp.getName());
-        // System.out.println(hemp.getMobile());  // 1. they are public and 2. we extended Person class
-        // System.out.println(hemp.getEmpno());
-        // System.out.println(hemp.getHourlyRate());
-        // System.out.println(hemp.getHours());
-        // System.out.println("Wages paid  =" + hemp.getHourlyRate()* hemp.getHours());
-        // System.out.println(hemp);
+            p = emp; // assigning sub class reference to superclass
 
+            // emp = p;
+            // not allowed
+                // person (p) is bigger than emp. type mismatch. person is parent of employee
+            // int i = 0;
+            // byte b = i;
+        
+        System.out.println(p.toString());
+        p = new HourlyEmployee("name", "empno", 100, 100, 100);
+        System.out.println(p);
+        p=emp;
+        System.out.println(p.getName()); // p refers to Person or Employee, or HourlyEmployee
+        // will print out employee name from top bc it p(person) was set to emp(employee)
 	}
 
 }

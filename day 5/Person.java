@@ -4,7 +4,6 @@ public class Person {
 	private String name;  // no  for identity, employee, consultant, manager, CEO, Sales
 	private String mobile;
 	public Person() {
-		// TODO Auto-generated constructor stub
 	}
 	
 	
