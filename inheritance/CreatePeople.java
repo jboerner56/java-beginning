@@ -1,5 +1,3 @@
-import Employee.java;
-
 public class CreatePeople {
 
 	public static void main(String[] args) {
@@ -11,7 +9,6 @@ public class CreatePeople {
         System.out.println(emp.getRole());
         System.out.println(emp.getSalary());
         System.out.println(emp);  
-        
         
         HourlyEmployee hemp = new HourlyEmployee("Jennifer Atkinson","945445454",102,200, 25.75);
         
