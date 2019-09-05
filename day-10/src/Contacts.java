@@ -10,6 +10,14 @@ public class Contacts {
 
     public Contacts() {
     }
+    public Contacts(String firstName, String lastName, long mobilePrimary, long mobileSecondary, String countryCode) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.mobilePrimary = mobilePrimary;
+        this.mobileSecondary = mobileSecondary;
+        this.countryCode = countryCode;
+
+    }
 
     public String getFirstName() {
         return firstName;
@@ -51,17 +59,21 @@ public class Contacts {
         this.countryCode = countryCode;
     }
 
-    public Contacts(String firstName, String lastName, long mobilePrimary, long mobileSecondary, String countryCode) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.mobilePrimary = mobilePrimary;
-        this.mobileSecondary = mobileSecondary;
-        this.countryCode = countryCode;
 
-    }
     // object creation
 
     // updating data
 
-
+// changes hex code to readable strings
+    // auto generated
+    @Override
+    public String toString() {
+        return "Contacts{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", mobilePrimary=" + mobilePrimary +
+                ", mobileSecondary=" + mobileSecondary +
+                ", countryCode='" + countryCode + '\'' +
+                '}';
+    }
 }
