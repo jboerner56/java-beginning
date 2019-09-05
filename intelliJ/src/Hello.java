@@ -1,11 +1,10 @@
-public class Hello {
+public class Sum {
 
     public static void main(String[] args){
-        System.out.println("Hello World");
-//        variable types
-        // int = integer, whole numbers without decimals
-        int integer = 13;
-        System.out.println(integer);
+        int num1 = 13;
+        int num2 = 2;
+        int sum = num1 + num2;
+        System.out.println(sum);
 
     }
 }
